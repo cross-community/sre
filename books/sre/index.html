@@ -6,7 +6,7 @@
 -->
 <html>
   <head>
-    <title>Site Reliability Engineering Taiwan</title>
+    <title>Site Reliability Engineering 讀書會導讀</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -25,41 +25,52 @@
     <nav><a href="#menu">Menu</a></nav>
     </header>
 
-    <!-- Menu -->
-    <nav id="menu">
-    <ul class="links">
-        <li><a href="index.html">首頁</a></li>
-		<li><a href="study-group.html">讀書會</a></li>
-        <li><a href="faq.html">常見問題</a></li>
-        <li><a href="sre-tw.html">SRE Facebook 社群</a></li>
-		<li><a href="community.html">相關社群</a></li>
-        <li><a href="contribute.html">致謝</a></li>
-        <!-- <li><a href="elements.html">Elements</a></li> -->
-    </ul>
-    <!--
-    <ul class="actions vertical">
-        <li><a href="#" class="button special fit">Get Started</a></li>
-        <li><a href="#" class="button fit">Log In</a></li>
-    </ul>
-    -->
+	<!-- Menu -->
+	<nav id="menu">
+        <ul class="links">
+            <li><a href="index.html">SRE 讀書會共筆</a></li>
+            <li><a href="part1.html">概論 (Introduction)</a></li>
+            <li><a href="part2.html">指導原則 (Principles)</a></li>
+            <li><a href="part3.html">具體實踐 (Practices)</a></li>
+            <li><a href="part4.html">管理 (Management)</a></li>
+            <li><a href="part5.html">總結 (Conclusions)</a></li>
+        </ul>
+        <ul class="actions vertical">
+            <li><a href="../../index.html" class="button special fit">SRE 首頁</a></li>
+            <!-- <li><a href="#" class="button fit">Log In</a></li> -->
+        </ul>
     </nav>
 
     <!-- Banner -->
     <section id="banner" class="major">
     <div class="inner">
-        <header class="major"><h1>Site Reliability Engineering Taiwan</h1></header>
+        <header class="major">
+        <h1>Site Reliability Engineering 讀書會共筆紀錄</h1>
+        </header>
         <div class="content">
         <p>
-          由 DevOps Taiwan 發起的 SRE 讀書會，<br />
-          歷時 2017/12 ~ 2018/05/24 六個月，累積大量的經驗與讀書心得分享
+          由 DevOps Taiwan 發起的 SRE 讀書會，歷時 2017/12 ~ 2018/05/24 六個月，累積大量的經驗與讀書心得分享。<br /><br />
+          本頁放置過去讀書會的導讀、共筆、提問、討論 ... 等詳細資料。
         </p>
-        <ul class="actions"><li><a href="https://www.facebook.com/groups/sre.taiwan/" class="button next scrolly">Facebook Group</a></li></ul>
+        <!--
+        <ul class="actions">
+          <li><a href="https://www.facebook.com/groups/sre.taiwan/" class="button next scrolly">Facebook Group</a></li>
+        </ul>
+        -->
         </div>
     </div>
     </section>
 
     <!-- Main -->
     <div id="main">
+        <section id="part1" class="tiles">
+            <div class="inner">
+                <header class="major">
+                <h2><a href="Part1.html" class="link">概論 (Introduction)</a></h2>
+                </header>
+                <p>緒論、SRE 如何看待 Production 環境</p>
+            </div>
+        </section>
 
         <!-- One -->
         <section id="one" class="tiles">
@@ -68,11 +79,8 @@
                 <img src="images/pic01.jpg" alt="" />
                 </span>
                 <header class="major">
-                <h3><a href="study-group.html" class="link">讀書會</a></h3>
-                <p>
-                    閱讀與 SRE 相關領域的書，活動涵蓋：書本導讀、共筆紀錄、問題討論、相關文章。<br /><br />
-                    第一本當然就是 Site Reliability Engineering。
-                </p>
+                <h3><a href="Part2.html" class="link">指導原則 (一)</a></h3>
+                <p>擁抱風險、服務水準目標、減少瑣事</p>
                 </header>
             </article>
             <article>
@@ -80,9 +88,8 @@
                 <img src="images/pic02.jpg" alt="" />
                 </span>
                 <header class="major">
-                <h3><a href="faq.html" class="link">SRE 常見問題</a></h3>
-                <p>
-                    什麼是 SRE？跟 DevOps 的差異？需要的技術？職涯規劃、世界趨勢 ... 等</p>
+                <h3><a href="Part2.html" class="link">指導原則 (二)</a></h3>
+                <p>監控分散式系統、自動化系統的演進、發行工程、簡單化</p>
                 </header>
             </article>
             <article>
@@ -90,8 +97,8 @@
                 <img src="images/pic03.jpg" alt="" />
                 </span>
                 <header class="major">
-                <h3><a href="https://www.facebook.com/groups/sre.taiwan/" class="link">SRE Facebook 社群</a></h3>
-                <p>Taiwan 社群討論</p>
+                <h3><a href="Part3.html" class="link">具體實踐 (一)</a></h3>
+                <p>On-Call、故障排除技巧、緊急應變、緊急事件管理、事後檢討：從失敗中學習、事件追蹤</p>
                 </header>
             </article>
             <article>
@@ -99,11 +106,10 @@
                 <img src="images/pic04.jpg" alt="" />
                 </span>
                 <header class="major">
-                <h3><a href="Part3.html" class="link">相關社群</a></h3>
-                <p>DevOps Taiwan</p>
+                <h3><a href="Part3.html" class="link">具體實踐 (二)</a></h3>
+                <p>測試可靠性、SRE 部門的軟體工程實務、前端服務器的負載平衡、資料中心內的負載平衡</p>
                 </header>
             </article>
-            <!--
             <article>
                 <span class="image">
                 <img src="images/pic05.jpg" alt="" />
@@ -140,7 +146,6 @@
                 <p>其他產業的實務經驗</p>
                 </header>
              </article>
-             -->
 
         </section>
 
@@ -215,19 +220,17 @@
     -->
 
     <!-- Footer -->
-        <footer id="footer">
-        <div class="inner">
-            <ul class="icons">
-            <li><a href="https://www.facebook.com/groups/sre.taiwan/" class="icon alt fa-facebook"><span class="label">SRE Taiwan</span></a></li>
-            <li><a href="https://www.facebook.com/groups/DevOpsTaiwan/" class="icon alt fa-facebook"><span class="label">DevOps Taiwan</span></a></li>
-            <li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
-            </ul>
-            <ul class="copyright">
-            <li>&copy; 2018 Site Reliability Engineering TAIWAN</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-            </ul>
-        </div>
-        </footer>
-
+		<footer id="footer">
+		<div class="inner">
+			<ul class="icons">
+			<li><a href="https://www.facebook.com/groups/sre.taiwan/" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+			<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+			</ul>
+			<ul class="copyright">
+			<li>&copy; 2018 Site Reliability Engineering TAIWAN</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
+		</footer>
 
     </div>
 
