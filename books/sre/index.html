@@ -49,7 +49,7 @@
         </header>
         <div class="content">
         <p>
-          由 DevOps Taiwan 發起的 SRE 讀書會，歷時 2017/12 ~ 2018/05/24 六個月，累積大量的經驗與讀書心得分享。<br /><br />
+          由 DevOps Taiwan 發起的 SRE 讀書會，痞客邦 (Pixnet) 場地贊助，歷時 2017/12 ~ 2018/05/24 六個月，累積大量的經驗與讀書心得分享。<br /><br />
           本頁放置過去讀書會的導讀、共筆、提問、討論 ... 等詳細資料。
         </p>
         <!--
@@ -63,14 +63,16 @@
 
     <!-- Main -->
     <div id="main">
+        <!--
         <section id="part1" class="tiles">
             <div class="inner">
                 <header class="major">
-                <h2><a href="Part1.html" class="link">概論 (Introduction)</a></h2>
+                <h2><a href="part1.html" class="link">概論 (Introduction)</a></h2>
                 </header>
                 <p>緒論、SRE 如何看待 Production 環境</p>
             </div>
         </section>
+        -->
 
         <!-- One -->
         <section id="one" class="tiles">
@@ -79,35 +81,63 @@
                 <img src="images/pic01.jpg" alt="" />
                 </span>
                 <header class="major">
-                <h3><a href="Part2.html" class="link">指導原則 (一)</a></h3>
-                <p>擁抱風險、服務水準目標、減少瑣事</p>
+                <h3><a href="part1.html" class="link">概論 (Introduction)</a></h3>
+                <p>緒論、SRE 如何看待 Production 環境</p>
                 </header>
             </article>
+
             <article>
                 <span class="image">
-                <img src="images/pic02.jpg" alt="" />
+                <img src="images/pic01.jpg" alt="" />
                 </span>
                 <header class="major">
-                <h3><a href="Part2.html" class="link">指導原則 (二)</a></h3>
-                <p>監控分散式系統、自動化系統的演進、發行工程、簡單化</p>
+                    <h3><a href="part2.html" class="link">指導原則 (Principles)</a></h3>
+                    <p>
+                        <ul>
+                            <li>擁抱風險、服務水準目標、減少瑣事</li>
+                            <li>監控分散式系統、自動化系統的演進、發行工程、簡單化</li>
+                        </ul>
+                    </p>
                 </header>
             </article>
+
             <article>
                 <span class="image">
                 <img src="images/pic03.jpg" alt="" />
                 </span>
                 <header class="major">
-                <h3><a href="Part3.html" class="link">具體實踐 (一)</a></h3>
-                <p>On-Call、故障排除技巧、緊急應變、緊急事件管理、事後檢討：從失敗中學習、事件追蹤</p>
+                <h3><a href="part3.html" class="link">具體實踐 (Practices) - Part 1</a></h3>
+                <p>
+                    <ul>
+                        <li>On-Call、故障排除技巧、緊急應變、緊急事件管理、事後檢討：從失敗中學習、事件追蹤</li>
+                        <li>測試可靠性、SRE 部門的軟體工程實務、前端服務器的負載平衡、資料中心內的負載平衡</li>
+                    </ul>
+                </p>
                 </header>
             </article>
+
             <article>
                 <span class="image">
                 <img src="images/pic04.jpg" alt="" />
                 </span>
                 <header class="major">
-                <h3><a href="Part3.html" class="link">具體實踐 (二)</a></h3>
-                <p>測試可靠性、SRE 部門的軟體工程實務、前端服務器的負載平衡、資料中心內的負載平衡</p>
+                <h3><a href="part3.html" class="link">具體實踐 (Practices) - Part 2</a></h3>
+                <p>
+                    <ul>
+                        <li>處理系統超載、處理連鎖故障、利用分散式一致化題高可靠性、分散式任務排程</li>
+                        <li>資料處理管線、資料完整性、可靠的進行大規模發行</li>
+                    </ul>
+                </p>
+                </header>
+            </article>
+            <!--
+            <article>
+                <span class="image">
+                <img src="images/pic04.jpg" alt="" />
+                </span>
+                <header class="major">
+                <h3><a href="part3.html" class="link">具體實踐 (二)</a></h3>
+                <p></p>
                 </header>
             </article>
             <article>
@@ -115,8 +145,8 @@
                 <img src="images/pic05.jpg" alt="" />
                 </span>
                 <header class="major">
-                <h3><a href="Part3.html" class="link">具體實踐 (三)</a></h3>
-                <p>處理系統超載、處理連鎖故障、利用分散式一致化題高可靠性、分散式任務排程</p>
+                <h3><a href="part3.html" class="link">具體實踐 (三)</a></h3>
+                <p></p>
                 </header>
             </article>
             <article>
@@ -124,17 +154,24 @@
                 <img src="images/pic05.jpg" alt="" />
                 </span>
                 <header class="major">
-                <h3><a href="Part3.html" class="link">具體實踐 (四)</a></h3>
-                <p>資料處理管線、資料完整性、可靠的進行大規模發行</p>
+                <h3><a href="part3.html" class="link">具體實踐 (四)</a></h3>
+                <p></p>
                 </header>
             </article>
-                <article>
+            -->
+            <article>
                 <span class="image">
                 <img src="images/pic06.jpg" alt="" />
                 </span>
                 <header class="major">
-                <h3><a href="Part4.html" class="link">管理</a></h3>
-                <p>培養 SRE 加入 On-Call、處理插斷性任務、幫助團隊從維運超載中恢復、與其他團隊的協同合作、參與模型的演進歷程</p>
+                <h3><a href="part4.html" class="link">管理</a></h3>
+                <p>
+                    <ul>
+                        <li>培養 SRE 加入 On-Call、處理插斷性任務、幫助團隊從維運超載中恢復</li>
+                        <li>與其他團隊的協同合作、參與模型的演進歷程</li>
+                    </ul>
+                </p>
+
                 </header>
             </article>
             <article>
@@ -142,7 +179,7 @@
                 <img src="images/pic06.jpg" alt="" />
                 </span>
                 <header class="major">
-                <h3><a href="Part5.html" class="link">總結</a></h3>
+                <h3><a href="part5.html" class="link">總結</a></h3>
                 <p>其他產業的實務經驗</p>
                 </header>
              </article>
@@ -158,7 +195,7 @@
                 </header>
                 <p>其他產業的實務經驗</p>
                 <ul class="actions">
-                <li><a href="Part5.html" class="button next">總結</a></li>
+                <li><a href="part5.html" class="button next">總結</a></li>
                 </ul>
             </div>
         </section>
