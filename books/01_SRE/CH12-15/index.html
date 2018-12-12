@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>第十二～十五章 - SRE / DevOps Taiwan 讀書會</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "\u7b2c\u5341\u4e8c\uff5e\u5341\u4e94\u7ae0";
+    var mkdocs_page_input_path = "01_SRE/CH12-15.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> SRE / DevOps Taiwan 讀書會</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">開場</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Round 1: Site Reliability Engineering</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../CH01/">緒論、第一章</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../CH02-04/">第二、三、四章</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../CH05-07/">第五、六、七章</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../CH08-11/">第八～十一章</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">第十二～十五章</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#slides">Slides</a></li>
+    
+
+    <li class="toctree-l3"><a href="#_1">問題與提問</a></li>
+    
+
+    <li class="toctree-l3"><a href="#_2">延伸閱讀</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../CH16-18/">第十六～十八章</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../CH19-21/">第十九～廿一章</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../CH22/">第廿二章</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../CH25/">第廿五章</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../CH32-34/">第卅二～卅四章</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">SRE / DevOps Taiwan 讀書會</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Round 1: Site Reliability Engineering &raquo;</li>
+        
+      
+    
+    <li>第十二～十五章</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <ul>
+<li>導讀時間：2017/12/28 (四)</li>
+<li>場地提供：PIXNET</li>
+<li><a href="https://hackmd.io/B1YTFIn1Sy-ze2iwp9G-1A">共筆紀錄</a></li>
+<li>章節內容：<ul>
+<li>第12章：Effective Troubleshooting by Eric Chen</li>
+<li>第十三章 - 緊急事件響應 by Rick Lin (請假，臨時由 Rick Hwang 代打)</li>
+<li>第十四章 - 緊急事故管理 by Rick Hwang</li>
+<li>第十五章 - 事後總結：從失敗中學習</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="slides">Slides</h2>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/fUwmUxIDiDl0yE" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+<p><div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/pjackchen/srech12effectivetroubleshooting" title="SRE_Ch12_effective_troubleshooting" target="_blank">SRE_Ch12_effective_troubleshooting</a> </strong> from <strong><a href="https://www.slideshare.net/pjackchen" target="_blank">Pjack Chen</a></strong> </div></p>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/dXsXOuynq08kSW" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+<p><div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/rickhwang/sre-ch13-emergency-response" title="SRE CH13 - Emergency Response" target="_blank">SRE CH13 - Emergency Response</a> </strong> from <strong><a href="https://www.slideshare.net/rickhwang" target="_blank">Rick Hwang</a></strong> </div></p>
+<hr />
+<h2 id="_1">問題與提問</h2>
+<ul>
+<li>Ch 12 - Effective Troubleshooting<ul>
+<li>Q: Troubleshooting 無法教導，只能靠累積經驗？</li>
+<li>Q: Text logs are very helpful for reactive debugging in real time, while storing logs in a structured binary format can make it possible to build tools to conduct retrospective analysis with much more information. 這段的意思什麼？特別是其中的 structured binary format 是為什麼？</li>
+<li>Q: 你們有類似急救檢傷分類的方式評估意外事故嗎？</li>
+<li>Q: 你們有建立常見問題偵錯表、分析表，可以用來幫助事故處理者能夠用比較系統化的方式來幫助故障排除嗎？（提供理性解法，避免壓力導致誤判）</li>
+</ul>
+</li>
+<li>Q: 如何重現事故？</li>
+<li>Ch 13 - Emergency Response<ul>
+<li>Q: 針對事故，會補測試來預防未來再次發生？</li>
+<li>Q: 平常有在做事故演練嗎？Chaos Monkey？</li>
+<li>Q: 除了書中的這三種案例（Test-Induced、Change-Induced、Process-Induced Emergency），你還有遇過其他案例嗎？</li>
+</ul>
+</li>
+<li>Ch 14 - Managing Incidents<ul>
+<li>Q: 事故的前、中、後，你們會做些什麼？(Rick 提供)</li>
+</ul>
+</li>
+<li>Ch 15 - Postmortem Culture<ul>
+<li>Q: 不咎責 / 對事不對人的文化？你有嗎？你們會獵巫嗎？</li>
+<li>Q: 事後檢討報告，你們有建立這樣的制度嗎？或是透過其他的內部知識共享方式？</li>
+</ul>
+</li>
+</ul>
+<h2 id="_2">延伸閱讀</h2>
+<ul>
+<li><a href="https://www.managertoday.com.tw/articles/view/55387">當勒索病毒攻擊全球企業，他如何靠3小時成軍的團隊，56小時內釋出解鎖方案？</a></li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../CH16-18/" class="btn btn-neutral float-right" title="第十六～十八章">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../CH08-11/" class="btn btn-neutral" title="第八～十一章"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../CH08-11/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../CH16-18/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>

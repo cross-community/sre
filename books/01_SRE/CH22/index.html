@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>第廿二章 - SRE / DevOps Taiwan 讀書會</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "\u7b2c\u5eff\u4e8c\u7ae0";
+    var mkdocs_page_input_path = "01_SRE/CH22.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> SRE / DevOps Taiwan 讀書會</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">開場</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Round 1: Site Reliability Engineering</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../CH01/">緒論、第一章</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../CH02-04/">第二、三、四章</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../CH05-07/">第五、六、七章</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../CH08-11/">第八～十一章</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../CH12-15/">第十二～十五章</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../CH16-18/">第十六～十八章</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../CH19-21/">第十九～廿一章</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">第廿二章</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#slides">Slides</a></li>
+    
+
+    <li class="toctree-l3"><a href="#_1">問題與提問</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../CH25/">第廿五章</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../CH32-34/">第卅二～卅四章</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">SRE / DevOps Taiwan 讀書會</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Round 1: Site Reliability Engineering &raquo;</li>
+        
+      
+    
+    <li>第廿二章</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <ul>
+<li>導讀時間：2018/02/08 (四)</li>
+<li>場地提供：PIXNET</li>
+<li>章節內容：<ul>
+<li>第 22 章 Addressing Cascading Failures 處理連鎖故障 by <ccshih>iiiccshih@gmail.com</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="slides">Slides</h2>
+<p><embed src="/pdf/SRE/SRE_CH22.pdf" type="application/pdf" width="100%" height="400px" /></p>
+<hr />
+<h2 id="_1">問題與提問</h2>
+<p>Q: 你有遇過連鎖故障嗎？情境？如何應急處置？根本原因？
+Q: 為何書中如此建議 「For a system with fairly steady traffic over time, it is usually better to have small queue lengths relative to the thread pool size (e.g., 50% or less), which results in the server rejecting requests early when it can’t sustain the rate of incoming requests.」（今晚的導讀者有解答）
+Q: timeout vs deadline ?
+Q: 你如何找出合適的 timeout 及 deadline 設定值？
+Q: 如何找出合適的 retry 設定值？
+Q: 針對書中提到各種因應連鎖故障的方法，你嘗試過哪些？你會如何判斷何時使用哪些方法？
+Q: 繁體中文版的 P.255 註四，有人試著實驗看看嗎？
+Q: 你有嘗試實踐 chaos engineering 嗎？</p>
+<p>第 25 章 Data Processing Pipelines
+Q: 你有設計、規劃與實作過任何 data pipeline 的經驗嗎？
+Q: 不僅是針對 data pipeline，有任何 pipeline 類型的工作經驗分享嗎？</p>
+<ul>
+<li>CH25 Data Processing Pipelines</li>
+<li>
+<p>https://www.slideshare.net/rickhwang/sre-ch25-data-processing-pipelines</p>
+</li>
+<li>
+<p>CH26 資料完整性</p>
+</li>
+<li>https://docs.google.com/presentation/d/1g7jSYPUm7qLeqsR-wpynLjmV5CFPRBTCL9PJCFUZ8i8/edit</li>
+<li>
+<p>jnlin @ PIXNET</p>
+</li>
+<li>
+<p>CH32</p>
+</li>
+<li>
+<p>https://www.slideshare.net/cytseng999/20180526-the-evolving-sre-engagement-model</p>
+</li>
+<li>
+<p>CH33/34: https://www.slideshare.net/rickhwang/sre-ch33ch34-lessons-learned-from-other-industriesconclusion-90165433</p>
+</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../CH25/" class="btn btn-neutral float-right" title="第廿五章">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../CH19-21/" class="btn btn-neutral" title="第十九～廿一章"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../CH19-21/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../CH25/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>

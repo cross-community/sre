@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>第八～十一章 - SRE / DevOps Taiwan 讀書會</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "\u7b2c\u516b\uff5e\u5341\u4e00\u7ae0";
+    var mkdocs_page_input_path = "01_SRE/CH08-11.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> SRE / DevOps Taiwan 讀書會</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">開場</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Round 1: Site Reliability Engineering</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../CH01/">緒論、第一章</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../CH02-04/">第二、三、四章</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../CH05-07/">第五、六、七章</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">第八～十一章</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#_1">問題與提問</a></li>
+    
+
+    <li class="toctree-l3"><a href="#_2">延伸閱讀</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../CH12-15/">第十二～十五章</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../CH16-18/">第十六～十八章</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../CH19-21/">第十九～廿一章</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../CH22/">第廿二章</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../CH25/">第廿五章</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../CH32-34/">第卅二～卅四章</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">SRE / DevOps Taiwan 讀書會</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Round 1: Site Reliability Engineering &raquo;</li>
+        
+      
+    
+    <li>第八～十一章</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <ul>
+<li>導讀時間：2017/12/14 (四)</li>
+<li>場地提供：PIXNET</li>
+<li><a href="https://hackmd.io/IKnFL-MbSQeH6Wd1IOt2cg">共筆紀錄</a></li>
+<li>章節內容：<ul>
+<li>第八章 - Release Engineering 發行工程 by wanchia (婉佳 ?)</li>
+<li>第九章 - Simplicity 簡單化 by win</li>
+<li>第十章 - 基於時間序列數據進行有效報警 by 曾義格</li>
+<li>第十一章 - Being On-Call 輪值 by John</li>
+</ul>
+</li>
+</ul>
+<h2 id="_1">問題與提問</h2>
+<ul>
+<li>CH08 - Release Engineering<ul>
+<li>你的公司有發佈工程師、發佈經理 這樣的職位嗎？他們實際的工作內容為？</li>
+<li>你們的發佈流程為何？遇過哪些坑？哪些雷？</li>
+<li>你們在發佈過程中，是否也有關心發佈時的相關數據，例如：部署一次要花多少時間？發佈的頻率？有覺得哪些是重要的數據嗎？為什麼重要？</li>
+<li>你們團隊對於發佈工程的哲學（政策）？</li>
+<li>你們採用哪個 git flow？這對於你們的 dev 與 ops 之間的協作有影響嗎？</li>
+<li>SRE 本身有在用 VCS 嗎？組態、自動化腳本有送進 VCS 嗎？使用的情況與情形？</li>
+<li>有人實踐 Push On Green 嗎？</li>
+<li>在你們的發佈流程中，有哪些權限控管的機制？是否有人為控管的步驟(關卡)？</li>
+<li>你使用的 CI Server 是？你當初選擇與評估的決策依據？</li>
+<li>組態檔與發佈流程是如何互相配合的？</li>
+<li>書中提到的四種組態與發佈流程配合的方式，你們採用哪一種？有不一樣的做法嗎？</li>
+<li>rolling upgrade？藍綠、金絲雀部署，你有採用嗎？</li>
+</ul>
+</li>
+<li>CH09 - Simplicity<ul>
+<li>你是如何撰寫自動化腳本的？撰寫的情境是？</li>
+<li>有在進行重構與簡化嗎？</li>
+<li>exploratory coding？有人這麼做過嗎？</li>
+<li>你有進行 software bloat detection 嗎？</li>
+</ul>
+</li>
+<li>PART3 - Practices<ul>
+<li>圖 III-1 金字塔需求圖，大家的想法是？</li>
+</ul>
+</li>
+<li>CH10 - Practical Alerting from Time-Series Data<ul>
+<li>大家看得懂這章嗎？（笑）</li>
+<li>你們在使用哪些 Time-Series 的監控工具？</li>
+<li>續上，可以分享一下實務的使用情境嗎？</li>
+</ul>
+</li>
+<li>CH11 - Being On-Call<ul>
+<li>書中提及良好的 On-Call 方式、福利、制度、文化，在你的團隊中實踐了哪些？</li>
+<li>有在做 DiRT 嗎？或是 Chaos monkey 嗎？</li>
+</ul>
+</li>
+</ul>
+<h2 id="_2">延伸閱讀</h2>
+<ul>
+<li><a href="https://thenewstack.io/call-rotations-best-wake-devs-middle-night/">On Call Rotations: How Best to Wake Devs Up in the Middle of the Night</a></li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../CH12-15/" class="btn btn-neutral float-right" title="第十二～十五章">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../CH05-07/" class="btn btn-neutral" title="第五、六、七章"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../CH05-07/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../CH12-15/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>

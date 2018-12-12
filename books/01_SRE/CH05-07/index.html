@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>第五、六、七章 - SRE / DevOps Taiwan 讀書會</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "\u7b2c\u4e94\u3001\u516d\u3001\u4e03\u7ae0";
+    var mkdocs_page_input_path = "01_SRE/CH05-07.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> SRE / DevOps Taiwan 讀書會</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">開場</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Round 1: Site Reliability Engineering</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../CH01/">緒論、第一章</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../CH02-04/">第二、三、四章</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">第五、六、七章</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#slides">Slides</a></li>
+    
+
+    <li class="toctree-l3"><a href="#_1">問題與提問</a></li>
+    
+
+    <li class="toctree-l3"><a href="#_2">延伸閱讀</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../CH08-11/">第八～十一章</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../CH12-15/">第十二～十五章</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../CH16-18/">第十六～十八章</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../CH19-21/">第十九～廿一章</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../CH22/">第廿二章</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../CH25/">第廿五章</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../CH32-34/">第卅二～卅四章</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">SRE / DevOps Taiwan 讀書會</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Round 1: Site Reliability Engineering &raquo;</li>
+        
+      
+    
+    <li>第五、六、七章</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <ul>
+<li>導讀時間：2017/11/30 (四)</li>
+<li>場地提供：PIXNET</li>
+<li><a href="https://hackmd.io/Yj7gMzAORLOKM41kpzoCnQ">共筆紀錄</a></li>
+<li>章節內容：<ul>
+<li>第五章 減少瑣事 by Wnlin @ Pixnet</li>
+<li>第六章 Monitoring System by Tim @ Droi</li>
+<li>第七章 Google 的自動化系統的演進 by Levi Chen @ 91APP</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="slides">Slides</h2>
+<p><embed src="/pdf/SRE_CH05.pdf" type="application/pdf" width="100%" height="400px" /></p>
+<!--
+## Q&A
+
+* 大家覺得瑣碎的雜事定義是？
+* 書裡面的定義，手動性，手動執行腳本來作一些事情，定義為瑣事
+    * Google 認為這樣的事情也應該要減少
+    * Rick: VIM 例子，往左邊刪除的方法，同事認為用 IDE 的熱鍵更方便
+        * afu: d ^ 可以從游標處往左邊刪除至行首
+    * Rick 同事：有人來問你問題，一定得思考，不能直接重複問題，難以被分類在維運或工程工作，認為這是雜事
+    * 正瑋: 大概像是董事長來問你說：我的手機要如何操作 OOO 這種情境
+* 職涯發展停頓，造成士氣低落，一直被打斷，怎麼辦？
+    * 正瑋：可以使用番茄鐘 ; 但是遇到小孩子打斷還是無解
+
+-->
+
+<hr />
+<h2 id="_1">問題與提問</h2>
+<ul>
+<li>CH05<ul>
+<li>手動跑腳本也算瑣事(Toil)？</li>
+<li>書中提到 Toil 可能會帶來一些壞處，有人遇過嗎？</li>
+</ul>
+</li>
+<li>CH06<ul>
+<li>white-box 與 black-box monitoring 的差異，有更多例子嗎？</li>
+<li>各位都分配多少人力在處理 monitoring？真的會安排人盯著 dashborad？</li>
+<li>除了四大黃金指標，各位還會關注哪些指標？</li>
+<li>書中提到為了避免讓整個監控系統過於複雜，因此構成整個監控系統的各部件（Alert, dashboard, 指標的收集與匯整...），應該是彼此相對獨立運行為佳，針對這點各位的想法是？有無實務上的經驗可以分享？</li>
+<li>關於 monitoring 的頻率，各位實際現場的經驗？</li>
+</ul>
+</li>
+<li>CH07<ul>
+<li>如何判斷要不要自動化？何時手動處理，何時會自動化？</li>
+<li>自動化的演進？各位做到什麼程度？</li>
+<li>自動化腳本的維護，佔據你們目前多少的工作量？</li>
+</ul>
+</li>
+</ul>
+<h2 id="_2">延伸閱讀</h2>
+<ul>
+<li><a href="https://medium.com/devopslinks/how-to-monitor-the-sre-golden-signals-1391cadc7524?imm_mid=0f84c9&amp;cmp=em-webops-na-na-newsltr_20171117">How to Monitor the SRE Golden Signals</a></li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../CH08-11/" class="btn btn-neutral float-right" title="第八～十一章">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../CH02-04/" class="btn btn-neutral" title="第二、三、四章"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../CH02-04/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../CH08-11/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>
