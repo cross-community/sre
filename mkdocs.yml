@@ -1,0 +1,20 @@
+site_name: SRE / DevOps Taiwan 讀書會
+nav:
+  - "讀書會": index.md
+  - "Round 1: Site Reliability Engineering":
+    - 緒論、第一章: "01_SRE/CH01.md"
+    - 第二、三、四章: "01_SRE/CH02-04.md"
+    - 第五、六、七章: "01_SRE/CH05-07.md"
+    - 第八～十一章: "01_SRE/CH08-11.md"
+    - 第十二～十五章: "01_SRE/CH12-15.md"
+    - 第十六～十八章: "01_SRE/CH16-18.md"
+    - 第十九～廿一章: "01_SRE/CH19-21.md"
+    - 第廿二章: "01_SRE/CH22.md"
+    - 第廿五章: "01_SRE/CH25.md"
+    - 第廿六章: "01_SRE/CH26.md"
+    - 第卅二～卅四章: "01_SRE/CH32-34.md"
+#  - "Round 2: Continous Delivery":
+#    - 第一次: 1_20171116.md
+theme: 
+#  name: readthedocs
+  name: material
