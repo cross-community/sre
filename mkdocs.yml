@@ -18,3 +18,5 @@ nav:
 theme: 
 #  name: readthedocs
   name: material
+
+google_analytics: ['UA-125861317-1', 'cross-community.github.io']
