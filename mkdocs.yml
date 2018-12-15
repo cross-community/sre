@@ -13,9 +13,10 @@ nav:
     - 第廿五章: "01_SRE/CH25.md"
     - 第廿六章: "01_SRE/CH26.md"
     - 第卅二～卅四章: "01_SRE/CH32-34.md"
+    - 經典好文: "Articles.md"
 #  - "Round 2: Continous Delivery":
 #    - 第一次: 1_20171116.md
-theme: 
+theme:
 #  name: readthedocs
   name: material
 
