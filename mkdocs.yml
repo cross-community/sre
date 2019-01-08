@@ -1,6 +1,6 @@
 site_name: SRE / DevOps Taiwan 讀書會
 nav:
-  - "讀書會": index.md
+  - "SRE 讀書會": index.md
   - "Round 1: Site Reliability Engineering":
     - 緒論、第一章: "01_SRE/CH01.md"
     - 第二、三、四章: "01_SRE/CH02-04.md"
@@ -25,8 +25,11 @@ nav:
     - "第十一章 管理基礎設施與環境": "02_CD/CH11.md"
     - "第十二章 資料管理": "02_CD/CH12.md"
     - "第十三章 元件相依性管理": "02_CD/CH13.md"
-  - 經典好文: "Articles.md"
-    theme:
+  - "SRE 經典好文": "Articles.md"
+  - "事件處理案例": "Incidents.md"
+
+
+theme:
 #  name: readthedocs
   name: material
 
