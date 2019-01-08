@@ -14,6 +14,8 @@ nav:
     - 第廿六章: "01_SRE/CH26.md"
     - 第卅二～卅四章: "01_SRE/CH32-34.md"
   - "Round 2: Continous Delivery":
+    - "第一章": "02_CD/CH01.md"
+    - "第二章 設置管理": "02_CD/CH02.md"
     - "第三章 持續整合": "02_CD/CH03.md"
     - "第四章 測試策略的實現": "02_CD/CH04.md"
     - "第五章 部署流水線": "02_CD/CH05.md"

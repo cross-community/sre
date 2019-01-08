@@ -38,6 +38,7 @@
 * 2018/08/22: [混沌工程实践经验：如何让系统在生产环境中稳定可靠](https://www.infoq.cn/articles/chaos-engineering-in-production) [簡中]
     * 不是你選擇那一刻，是那一刻選擇你，而你唯一能選擇的就是作好準備。
     * 混屯工程不是製造問題，是揭露問題
+* 2018/06/26: [LinkedIn公開混亂工程經驗，並開源部分異常注入框架LinkedOut](https://www.ithome.com.tw/news/124117)
 * 2018/06/16: [增长教科书Netflix：进取到让自己毛骨悚然](https://mp.weixin.qq.com/s/c9zfL8Mnu241s3tHufhW5g) [簡中]
 
 
