@@ -40,7 +40,7 @@
     * 混屯工程不是製造問題，是揭露問題
 * 2018/06/26: [LinkedIn公開混亂工程經驗，並開源部分異常注入框架LinkedOut](https://www.ithome.com.tw/news/124117)
 * 2018/06/16: [增长教科书Netflix：进取到让自己毛骨悚然](https://mp.weixin.qq.com/s/c9zfL8Mnu241s3tHufhW5g) [簡中]
-
+* 2018/02/06: [Intro to Chaos Engineering](https://www.youtube.com/watch?v=qHykK5pFRW4)
 
 ## Misc
 
