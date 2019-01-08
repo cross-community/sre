@@ -27,6 +27,7 @@ nav:
     - "第十三章 元件相依性管理": "02_CD/CH13.md"
   - "SRE 經典好文": "Articles.md"
   - "事件處理案例": "Incidents.md"
+  - "相關活動分享": "Events.md"
 
 
 theme:
