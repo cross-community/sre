@@ -1,4 +1,13 @@
+## Site
 site_name: SRE / DevOps Taiwan 讀書會
+#site_author: 'Rick Hwang'
+#site_url: 'https://squidfunk.github.io/mkdocs-material/'
+
+# Copyright
+#copyright: 'Copyright &copy; 2016 - 2017 Martin Donath'
+
+
+## Navigator
 nav:
   - "SRE 讀書會": index.md
   - "Round 1: Site Reliability Engineering":
@@ -14,7 +23,7 @@ nav:
     - 第廿六章: "01_SRE/CH26.md"
     - 第卅二～卅四章: "01_SRE/CH32-34.md"
   - "Round 2: Continous Delivery":
-    - "第一章": "02_CD/CH01.md"
+    - "第一章 軟體交付的問題": "02_CD/CH01.md"
     - "第二章 設置管理": "02_CD/CH02.md"
     - "第三章 持續整合": "02_CD/CH03.md"
     - "第四章 測試策略的實現": "02_CD/CH04.md"
@@ -35,5 +44,31 @@ nav:
 theme:
 #  name: readthedocs
   name: material
+  palette:
+    primary: 'light blue'
+    accent: 'indigo'
+  logo:
+    icon: 'cloud'
+  language: 'zh-TW'
+  feature:
+    tabs: false
 
 google_analytics: ['UA-125861317-1', 'cross-community.github.io']
+
+extra:
+  manifest: 'manifest.webmanifest'
+  # https://squidfunk.github.io/mkdocs-material/getting-started/#adding-social-links
+  social:
+    - type: facebook
+      link: https://www.facebook.com/groups/sre.taiwan/
+    - type: github
+      link: https://github.com/cross-community/sre/
+  disqus: 'cross-community'
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
