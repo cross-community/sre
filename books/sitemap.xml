@@ -46,12 +46,27 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://cross-community.github.io/sre/01_SRE/CH23-24/</loc>
+     <lastmod>2019-01-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://cross-community.github.io/sre/01_SRE/CH25/</loc>
      <lastmod>2019-01-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://cross-community.github.io/sre/01_SRE/CH26/</loc>
+     <loc>https://cross-community.github.io/sre/01_SRE/CH26-28/</loc>
+     <lastmod>2019-01-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://cross-community.github.io/sre/01_SRE/CH27/</loc>
+     <lastmod>2019-01-09</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://cross-community.github.io/sre/01_SRE/CH30-31/</loc>
      <lastmod>2019-01-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
