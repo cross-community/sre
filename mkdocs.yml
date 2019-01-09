@@ -1,7 +1,7 @@
 ## Site
 site_name: SRE / DevOps Taiwan 讀書會
 #site_author: 'Rick Hwang'
-#site_url: 'https://squidfunk.github.io/mkdocs-material/'
+site_url: 'https://cross-community.github.io/sre/'
 
 # Copyright
 #copyright: 'Copyright &copy; 2016 - 2017 Martin Donath'
