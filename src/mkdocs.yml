@@ -1,11 +1,9 @@
 ## Site
 site_name: SRE / DevOps Taiwan 讀書會
-#site_author: 'Rick Hwang'
 site_url: 'https://cross-community.github.io/sre/'
 
 # Copyright
 #copyright: 'Copyright &copy; 2016 - 2017 Martin Donath'
-
 
 ## Navigator
 nav:
@@ -44,8 +42,10 @@ nav:
   - "相關活動分享": "Events.md"
   - "Change Log": "ChangeLog.md"
 
+##
+# Theme: material
 theme:
-#  name: readthedocs
+#  name: readthedocs # default
   name: material
   palette:
     primary: 'light blue'
@@ -56,7 +56,9 @@ theme:
   feature:
     tabs: false
 
-google_analytics: ['UA-125861317-1', 'cross-community.github.io']
+## Custom
+#extra_css:
+#  - 'stylesheets/extra.css'
 
 extra:
   manifest: 'manifest.webmanifest'
@@ -75,3 +77,6 @@ markdown_extensions:
       guess_lang: false
   - toc:
       permalink: true
+
+
+google_analytics: ['UA-125861317-1', 'cross-community.github.io']

@@ -21,6 +21,7 @@ pip install mkdocs-material
 ## Local Debugging
 
 ```bash
+cd docs
 mkdocs serve
 ```
 
