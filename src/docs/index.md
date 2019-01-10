@@ -1,13 +1,13 @@
 
-## 讀書會 Round 1: SRE
+## 讀書會 Round 1: Site Reliability Engineering
 
 * 2017/09/05: 正瑋在 [DevOps Taiwan](https://www.facebook.com/groups/DevOpsTaiwan/) 發起的 SRE 讀書會
 
 ![](/act/01_SRE/20170905-begining.png)
 
-痞客邦 (PIXNET) 場地贊助，歷時 2017/12 ~ 2018/05/24 六個月，累積大量的經驗與讀書心得分享。本頁放置過去讀書會的導讀、共筆、提問、討論 ... 等詳細資料。
+痞客邦 (PIXNET) 技術總監瑞男 支持，場地贊助，歷時 2017/12 ~ 2018/05/24 六個月，累積大量的經驗與讀書心得分享。本頁放置過去讀書會的導讀、共筆、提問、討論 ... 等詳細資料。
 
-2017/11/16: 開始讀書會，大家為了聯絡方便，便成立了 [SRE Taiwan](https://www.facebook.com/groups/sre.taiwan/)， [Rick Hwang](https://rickhw.github.io/) 協助擔任義工。
+2017/11/16: 開始讀書會，大家為了聯絡方便，便成立了 [SRE Taiwan](https://www.facebook.com/groups/sre.taiwan/)， Rick Hwang 協助擔任義工。
 
 2018/05/24: 經歷半年的讀書會落下了句點，大家合影留念。
 
