@@ -146,6 +146,11 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://cross-community.github.io/sre/02_CD/CH15/</loc>
+     <lastmod>2019-01-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://cross-community.github.io/sre/Articles/</loc>
      <lastmod>2019-01-24</lastmod>
      <changefreq>daily</changefreq>
