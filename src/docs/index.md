@@ -1,5 +1,5 @@
 
-## 讀書會 Round 1: Site Reliability Engineering
+## SRE 讀書會緣由
 
 * 2017/09/05: 正瑋在 [DevOps Taiwan](https://www.facebook.com/groups/DevOpsTaiwan/) 發起的 SRE 讀書會
 

@@ -7,7 +7,7 @@ site_url: 'https://cross-community.github.io/sre/'
 
 ## Navigator
 nav:
-  - "讀書會緣由": 01_SRE.md
+  - "讀書會緣由": index.md
   - "Round 1: Site Reliability Engineering":
     - "緒論、第一章": "01_SRE/CH01.md"
     - "第二、三、四章": "01_SRE/CH02-04.md"
