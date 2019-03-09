@@ -1,44 +1,14 @@
 
 ## Publish
 
-* https://cross-community.github.io/sre/
 
-
-
-## Install
-
-```bash
-## mkdocs
-# see: https://www.mkdocs.org/#installation
-pip install --upgrade pip
-pip install mkdocs
-
-## Theme: meterial
-# https://squidfunk.github.io/mkdocs-material/
-pip install mkdocs-material
-```
-
-## Local Debugging
-
-```bash
-cd docs
-mkdocs serve
-```
-
-
-## Deployment
-
-```
-./build_docs.sh
-./commit.sh
-```
-
-
-## Mkdocs
-
-* https://www.mkdocs.org/
-* https://squidfunk.github.io/mkdocs-material/
-
+* 靜態頁面 (bootstrap)：
+  * site: `https://www.sre.tw`
+  * repos: `https://cross-community.github.io/sre/`
+* 讀書會資料 (mkdocs)：
+  * source repos: `https://cross-community.github.io/study-area-docs/`
+  * site repos: `https://cross-community.github.io/study-area-site/`
+  * site url: `https://study-area.sre.tw/`
 
 
 ## Contributors

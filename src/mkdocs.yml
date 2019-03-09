@@ -1,7 +1,7 @@
 ## Site
 site_name: SRE / DevOps Taiwan 讀書會
 site_url: 'https://cross-community.github.io/sre/'
-repo_url: https://github.com/cross-community/sre/src
+repo_url: https://github.com/cross-community/sre
 docs_dir: 'docs'
 
 # Copyright
