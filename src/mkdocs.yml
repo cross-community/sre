@@ -42,6 +42,7 @@ nav:
     - "第十三章 元件相依性管理": "02_CD/CH13.md"
     - "第十四章 版本控制進階": "02_CD/CH14.md"
     - "第十五章 持續交付管理": "02_CD/CH15.md"
+  - "讀書會 Round 3": 03_K8s.md
   - "SRE 經典好文": "Articles.md"
   - "事件處理案例": "Incidents.md"
   - "相關活動分享": "Events.md"
